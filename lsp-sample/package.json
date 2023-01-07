@@ -16,14 +16,16 @@
 	"engines": {
 		"vscode": "^1.74.0"
 	},
-	"activationEvents": [],
+	"activationEvents": [
+		"onLanguage:python"
+	],
 	"main": "./client/out/extension",
 	"contributes": {
 		"configuration": {
 			"type": "object",
 			"title": "Example configuration",
 			"properties": {
-				"languageServerExample.trace.server": {
+				"pylsp.trace.server": {
 					"scope": "window",
 					"type": "string",
 					"enum": [
